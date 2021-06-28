@@ -1,43 +1,43 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// int main()
-// {
-//     int t;
-//     cin>>t;
-//     while(t--)
-//     {
-//         int l,r;
-//         cin>>l>>r;
-//         int cnt=0;
-//         for(int i=l;i<=r;i++)
-//         {
-//             int c=0;
-//             int rev=0;
-//             int temp=i;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int l,r;
+        cin>>l>>r;
+        int cnt=0;
+        for(int i=l;i<=r;i++)
+        {
+            int c=0;
+            int rev=0;
+            int temp=i;
             
-//             for(int j=1;j<=temp;j++)
-//             {
-//                 if(temp%j==0)
-//                 c++;
-//             }
-//             if(c==2)
-//             {
-//                 while(temp>0)
-// 			    {
-// 				    rev=rev*10+(temp%10);
-// 				    temp/=10;
-// 			    }
-// 			    if(rev==i)
-// 			    cnt++;
-//             }
-//         }
-//         cout<<cnt<<endl;
-//     }
-//     return 0;
-// }
+            for(int j=1;j<=temp;j++)
+            {
+                if(temp%j==0)
+                c++;
+            }
+            if(c==2)
+            {
+                while(temp>0)
+			    {
+				    rev=rev*10+(temp%10);
+				    temp/=10;
+			    }
+			    if(rev==i)
+			    cnt++;
+            }
+        }
+        cout<<cnt<<endl;
+    }
+    return 0;
+}
 
-
+//-------------------------------------------------------------------------  another approach with segmented seive --------------------------------------------------
 #include<bits/stdc++.h>
 using namespace std;
 
